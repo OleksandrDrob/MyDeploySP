@@ -4,18 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyDeploy",
+    name: "MyFramework",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "MyDeploy",
-            targets: ["MyDeploy"]),
+            name: "MyFramework",
+            targets: ["MyFramework"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "MyDeploy"),
+        .binaryTarget(
+              name: "MyFramework",
+              url: "https://github.com/OleksandrDrob/MyFramework/releases/download/main/MyXC.xcframework.zip", // Replace with your file URL
+              checksum: "4c6f7ea53040df742b37ae43ad1d8dbfe38a4f1a47147bdceda8564e77c47ff4" // This is optional for verification
+          )
 
     ]
 )

@@ -12,11 +12,25 @@ let package = Package(
             targets: ["MyFramework"]),
     ],
     targets: [
+        .target(
+             name: "MyFramework",
+             dependencies: [
+                 .target(name: "DaznSDK"),
+                 .target(name: "Coralogix"),
+                 .target(name: "CrashReporter")
+             ]
+         ),
         .binaryTarget(
-              name: "MyFramework",
-              url: "https://github.com/OleksandrDrob/MyFramework/releases/download/main/MyXC.xcframework.zip", // Replace with your file URL
-              checksum: "4c6f7ea53040df742b37ae43ad1d8dbfe38a4f1a47147bdceda8564e77c47ff4" // This is optional for verification
-          )
-
+            name: "DaznSDK",
+            path: "Frameworks/DaznSDK.xcframework"
+        ),
+        .binaryTarget(
+            name: "Coralogix",
+            path: "Frameworks/Coralogix.xcframework"
+        ),
+        .binaryTarget(
+            name: "CrashReporter",
+            path: "Frameworks/CrashReporter.xcframework"
+        )
     ]
 )

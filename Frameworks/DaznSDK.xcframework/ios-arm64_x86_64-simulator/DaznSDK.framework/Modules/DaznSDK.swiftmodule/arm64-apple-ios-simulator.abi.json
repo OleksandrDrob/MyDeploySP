@@ -1,0 +1,2437 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DaznSDK",
+    "printedName": "DaznSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DAZNSdkActor",
+        "printedName": "DAZNSdkActor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DAZNSdkActor",
+                "printedName": "DaznSDK.DAZNSdkActor",
+                "usr": "s:7DaznSDK12DAZNSdkActorC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK12DAZNSdkActorC6sharedACvpZ",
+            "mangledName": "$s7DaznSDK12DAZNSdkActorC6sharedACvpZ",
+            "moduleName": "DaznSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNSdkActor",
+                    "printedName": "DaznSDK.DAZNSdkActor",
+                    "usr": "s:7DaznSDK12DAZNSdkActorC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK12DAZNSdkActorC6sharedACvgZ",
+                "mangledName": "$s7DaznSDK12DAZNSdkActorC6sharedACvgZ",
+                "moduleName": "DaznSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK12DAZNSdkActorC15unownedExecutorScevp",
+            "mangledName": "$s7DaznSDK12DAZNSdkActorC15unownedExecutorScevp",
+            "moduleName": "DaznSDK",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK12DAZNSdkActorC15unownedExecutorScevg",
+                "mangledName": "$s7DaznSDK12DAZNSdkActorC15unownedExecutorScevg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7DaznSDK12DAZNSdkActorC",
+        "mangledName": "$s7DaznSDK12DAZNSdkActorC",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "GlobalActor"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GlobalActor",
+            "printedName": "GlobalActor",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ActorType",
+                "printedName": "ActorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNSdkActor",
+                    "printedName": "DaznSDK.DAZNSdkActor",
+                    "usr": "s:7DaznSDK12DAZNSdkActorC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:12_Concurrency11GlobalActorP",
+            "mangledName": "$ss11GlobalActorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DAZNConfig",
+        "printedName": "DAZNConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "countryCode",
+            "printedName": "countryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK10DAZNConfigV11countryCodeSSvp",
+            "mangledName": "$s7DaznSDK10DAZNConfigV11countryCodeSSvp",
+            "moduleName": "DaznSDK",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK10DAZNConfigV11countryCodeSSvg",
+                "mangledName": "$s7DaznSDK10DAZNConfigV11countryCodeSSvg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "languageCode",
+            "printedName": "languageCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK10DAZNConfigV12languageCodeSSvp",
+            "mangledName": "$s7DaznSDK10DAZNConfigV12languageCodeSSvp",
+            "moduleName": "DaznSDK",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK10DAZNConfigV12languageCodeSSvg",
+                "mangledName": "$s7DaznSDK10DAZNConfigV12languageCodeSSvg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DAZNEnvironment",
+                "printedName": "DaznSDK.DAZNEnvironment",
+                "usr": "s:7DaznSDK15DAZNEnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK10DAZNConfigV11environmentAA15DAZNEnvironmentOvp",
+            "mangledName": "$s7DaznSDK10DAZNConfigV11environmentAA15DAZNEnvironmentOvp",
+            "moduleName": "DaznSDK",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNEnvironment",
+                    "printedName": "DaznSDK.DAZNEnvironment",
+                    "usr": "s:7DaznSDK15DAZNEnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK10DAZNConfigV11environmentAA15DAZNEnvironmentOvg",
+                "mangledName": "$s7DaznSDK10DAZNConfigV11environmentAA15DAZNEnvironmentOvg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkKey",
+            "printedName": "sdkKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK10DAZNConfigV6sdkKeySSvp",
+            "mangledName": "$s7DaznSDK10DAZNConfigV6sdkKeySSvp",
+            "moduleName": "DaznSDK",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK10DAZNConfigV6sdkKeySSvg",
+                "mangledName": "$s7DaznSDK10DAZNConfigV6sdkKeySSvg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(countryCode:languageCode:environment:sdkKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DaznSDK.DAZNConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNConfig",
+                    "printedName": "DaznSDK.DAZNConfig",
+                    "usr": "s:7DaznSDK10DAZNConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DAZNEnvironment",
+                "printedName": "DaznSDK.DAZNEnvironment",
+                "hasDefaultArg": true,
+                "usr": "s:7DaznSDK15DAZNEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7DaznSDK10DAZNConfigV11countryCode08languageE011environment6sdkKeyACSgSS_SSAA15DAZNEnvironmentOSStcfc",
+            "mangledName": "$s7DaznSDK10DAZNConfigV11countryCode08languageE011environment6sdkKeyACSgSS_SSAA15DAZNEnvironmentOSStcfc",
+            "moduleName": "DaznSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(witSdkKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DaznSDK.DAZNConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNConfig",
+                    "printedName": "DaznSDK.DAZNConfig",
+                    "usr": "s:7DaznSDK10DAZNConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7DaznSDK10DAZNConfigV9witSdkKeyACSgSS_tcfc",
+            "mangledName": "$s7DaznSDK10DAZNConfigV9witSdkKeyACSgSS_tcfc",
+            "moduleName": "DaznSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7DaznSDK10DAZNConfigV",
+        "mangledName": "$s7DaznSDK10DAZNConfigV",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DAZNEnvironment",
+        "printedName": "DAZNEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "staging",
+            "printedName": "staging",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.DAZNEnvironment.Type) -> DaznSDK.DAZNEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNEnvironment",
+                    "printedName": "DaznSDK.DAZNEnvironment",
+                    "usr": "s:7DaznSDK15DAZNEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.DAZNEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DAZNEnvironment",
+                        "printedName": "DaznSDK.DAZNEnvironment",
+                        "usr": "s:7DaznSDK15DAZNEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK15DAZNEnvironmentO7stagingyA2CmF",
+            "mangledName": "$s7DaznSDK15DAZNEnvironmentO7stagingyA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.DAZNEnvironment.Type) -> DaznSDK.DAZNEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNEnvironment",
+                    "printedName": "DaznSDK.DAZNEnvironment",
+                    "usr": "s:7DaznSDK15DAZNEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.DAZNEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DAZNEnvironment",
+                        "printedName": "DaznSDK.DAZNEnvironment",
+                        "usr": "s:7DaznSDK15DAZNEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK15DAZNEnvironmentO10productionyA2CmF",
+            "mangledName": "$s7DaznSDK15DAZNEnvironmentO10productionyA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "mock",
+            "printedName": "mock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.DAZNEnvironment.Type) -> DaznSDK.DAZNEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNEnvironment",
+                    "printedName": "DaznSDK.DAZNEnvironment",
+                    "usr": "s:7DaznSDK15DAZNEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.DAZNEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DAZNEnvironment",
+                        "printedName": "DaznSDK.DAZNEnvironment",
+                        "usr": "s:7DaznSDK15DAZNEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK15DAZNEnvironmentO4mockyA2CmF",
+            "mangledName": "$s7DaznSDK15DAZNEnvironmentO4mockyA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DAZNEnvironment",
+                "printedName": "DaznSDK.DAZNEnvironment",
+                "usr": "s:7DaznSDK15DAZNEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DAZNEnvironment",
+                "printedName": "DaznSDK.DAZNEnvironment",
+                "usr": "s:7DaznSDK15DAZNEnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK15DAZNEnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7DaznSDK15DAZNEnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "DaznSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK15DAZNEnvironmentO9hashValueSivp",
+            "mangledName": "$s7DaznSDK15DAZNEnvironmentO9hashValueSivp",
+            "moduleName": "DaznSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK15DAZNEnvironmentO9hashValueSivg",
+                "mangledName": "$s7DaznSDK15DAZNEnvironmentO9hashValueSivg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK15DAZNEnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7DaznSDK15DAZNEnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "DaznSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7DaznSDK15DAZNEnvironmentO",
+        "mangledName": "$s7DaznSDK15DAZNEnvironmentO",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DAZNSdk",
+        "printedName": "DAZNSdk",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isInitialized",
+            "printedName": "isInitialized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK7DAZNSdkC13isInitializedSbvpZ",
+            "mangledName": "$s7DaznSDK7DAZNSdkC13isInitializedSbvpZ",
+            "moduleName": "DaznSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK7DAZNSdkC13isInitializedSbvgZ",
+                "mangledName": "$s7DaznSDK7DAZNSdkC13isInitializedSbvgZ",
+                "moduleName": "DaznSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:session:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DAZNConfig",
+                "printedName": "DaznSDK.DAZNConfig",
+                "usr": "s:7DaznSDK10DAZNConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DaznSDK.DAZNSession)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DAZNSession",
+                    "printedName": "any DaznSDK.DAZNSession",
+                    "usr": "s:7DaznSDK11DAZNSessionP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK7DAZNSdkC10initialize6config7sessionyAA10DAZNConfigV_AA11DAZNSession_pSgtYaKFZ",
+            "mangledName": "$s7DaznSDK7DAZNSdkC10initialize6config7sessionyAA10DAZNConfigV_AA11DAZNSession_pSgtYaKFZ",
+            "moduleName": "DaznSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getInstance",
+            "printedName": "getInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DAZNSession",
+                "printedName": "any DaznSDK.DAZNSession",
+                "usr": "s:7DaznSDK11DAZNSessionP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK7DAZNSdkC11getInstanceAA11DAZNSession_pyYaKFZ",
+            "mangledName": "$s7DaznSDK7DAZNSdkC11getInstanceAA11DAZNSession_pyYaKFZ",
+            "moduleName": "DaznSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deinitialize",
+            "printedName": "deinitialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK7DAZNSdkC12deinitializeyyYaFZ",
+            "mangledName": "$s7DaznSDK7DAZNSdkC12deinitializeyyYaFZ",
+            "moduleName": "DaznSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7DaznSDK7DAZNSdkC",
+        "mangledName": "$s7DaznSDK7DAZNSdkC",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DaznSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DAZNSession",
+        "printedName": "DAZNSession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isConnected",
+            "printedName": "isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK11DAZNSessionP11isConnectedSbvp",
+            "mangledName": "$s7DaznSDK11DAZNSessionP11isConnectedSbvp",
+            "moduleName": "DaznSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK11DAZNSessionP11isConnectedSbvg",
+                "mangledName": "$s7DaznSDK11DAZNSessionP11isConnectedSbvg",
+                "moduleName": "DaznSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DaznSDK.DAZNSession>",
+                "sugared_genericSig": "<Self where Self : DaznSDK.DAZNSession>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "connectWith",
+            "printedName": "connectWith(email:viewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK11DAZNSessionP11connectWith5email14viewControllerySS_So06UIViewH0CtYaKF",
+            "mangledName": "$s7DaznSDK11DAZNSessionP11connectWith5email14viewControllerySS_So06UIViewH0CtYaKF",
+            "moduleName": "DaznSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DaznSDK.DAZNSession>",
+            "sugared_genericSig": "<Self where Self : DaznSDK.DAZNSession>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectWith",
+            "printedName": "connectWith(email:swiftUIView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK11DAZNSessionP11connectWith5email11swiftUIViewySS_7SwiftUI7AnyViewVtYaKF",
+            "mangledName": "$s7DaznSDK11DAZNSessionP11connectWith5email11swiftUIViewySS_7SwiftUI7AnyViewVtYaKF",
+            "moduleName": "DaznSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DaznSDK.DAZNSession>",
+            "sugared_genericSig": "<Self where Self : DaznSDK.DAZNSession>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectWith",
+            "printedName": "connectWith(token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK11DAZNSessionP11connectWith5tokenySS_tYaKF",
+            "mangledName": "$s7DaznSDK11DAZNSessionP11connectWith5tokenySS_tYaKF",
+            "moduleName": "DaznSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DaznSDK.DAZNSession>",
+            "sugared_genericSig": "<Self where Self : DaznSDK.DAZNSession>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK11DAZNSessionP10disconnectyyYaKF",
+            "mangledName": "$s7DaznSDK11DAZNSessionP10disconnectyyYaKF",
+            "moduleName": "DaznSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DaznSDK.DAZNSession>",
+            "sugared_genericSig": "<Self where Self : DaznSDK.DAZNSession>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changeRegion",
+            "printedName": "changeRegion(countryCode:languageCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK11DAZNSessionP12changeRegion11countryCode08languageG0ySS_SStYaKF",
+            "mangledName": "$s7DaznSDK11DAZNSessionP12changeRegion11countryCode08languageG0ySS_SStYaKF",
+            "moduleName": "DaznSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DaznSDK.DAZNSession>",
+            "sugared_genericSig": "<Self where Self : DaznSDK.DAZNSession>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7DaznSDK11DAZNSessionP",
+        "mangledName": "$s7DaznSDK11DAZNSessionP",
+        "moduleName": "DaznSDK",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DaznSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeychainError",
+        "printedName": "KeychainError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unableToConvertData",
+            "printedName": "unableToConvertData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.KeychainError.Type) -> DaznSDK.KeychainError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainError",
+                    "printedName": "DaznSDK.KeychainError",
+                    "usr": "s:7DaznSDK13KeychainErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.KeychainError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainError",
+                        "printedName": "DaznSDK.KeychainError",
+                        "usr": "s:7DaznSDK13KeychainErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK13KeychainErrorO19unableToConvertDatayA2CmF",
+            "mangledName": "$s7DaznSDK13KeychainErrorO19unableToConvertDatayA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToSaveData",
+            "printedName": "unableToSaveData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.KeychainError.Type) -> DaznSDK.KeychainError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainError",
+                    "printedName": "DaznSDK.KeychainError",
+                    "usr": "s:7DaznSDK13KeychainErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.KeychainError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainError",
+                        "printedName": "DaznSDK.KeychainError",
+                        "usr": "s:7DaznSDK13KeychainErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK13KeychainErrorO16unableToSaveDatayA2CmF",
+            "mangledName": "$s7DaznSDK13KeychainErrorO16unableToSaveDatayA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToDeleteData",
+            "printedName": "unableToDeleteData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.KeychainError.Type) -> DaznSDK.KeychainError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainError",
+                    "printedName": "DaznSDK.KeychainError",
+                    "usr": "s:7DaznSDK13KeychainErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.KeychainError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainError",
+                        "printedName": "DaznSDK.KeychainError",
+                        "usr": "s:7DaznSDK13KeychainErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK13KeychainErrorO18unableToDeleteDatayA2CmF",
+            "mangledName": "$s7DaznSDK13KeychainErrorO18unableToDeleteDatayA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainError",
+                "printedName": "DaznSDK.KeychainError",
+                "usr": "s:7DaznSDK13KeychainErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainError",
+                "printedName": "DaznSDK.KeychainError",
+                "usr": "s:7DaznSDK13KeychainErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK13KeychainErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7DaznSDK13KeychainErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "DaznSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK13KeychainErrorO9hashValueSivp",
+            "mangledName": "$s7DaznSDK13KeychainErrorO9hashValueSivp",
+            "moduleName": "DaznSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK13KeychainErrorO9hashValueSivg",
+                "mangledName": "$s7DaznSDK13KeychainErrorO9hashValueSivg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DaznSDK13KeychainErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7DaznSDK13KeychainErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "DaznSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7DaznSDK13KeychainErrorO",
+        "mangledName": "$s7DaznSDK13KeychainErrorO",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeychainKey",
+        "printedName": "KeychainKey",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.KeychainKey.Type) -> DaznSDK.KeychainKey",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainKey",
+                    "printedName": "DaznSDK.KeychainKey",
+                    "usr": "s:7DaznSDK11KeychainKeyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.KeychainKey.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "DaznSDK.KeychainKey",
+                        "usr": "s:7DaznSDK11KeychainKeyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK11KeychainKeyO5tokenyA2CmF",
+            "mangledName": "$s7DaznSDK11KeychainKeyO5tokenyA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DaznSDK.KeychainKey?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainKey",
+                    "printedName": "DaznSDK.KeychainKey",
+                    "usr": "s:7DaznSDK11KeychainKeyO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7DaznSDK11KeychainKeyO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7DaznSDK11KeychainKeyO8rawValueACSgSS_tcfc",
+            "moduleName": "DaznSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7DaznSDK11KeychainKeyO8rawValueSSvp",
+            "mangledName": "$s7DaznSDK11KeychainKeyO8rawValueSSvp",
+            "moduleName": "DaznSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7DaznSDK11KeychainKeyO8rawValueSSvg",
+                "mangledName": "$s7DaznSDK11KeychainKeyO8rawValueSSvg",
+                "moduleName": "DaznSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7DaznSDK11KeychainKeyO",
+        "mangledName": "$s7DaznSDK11KeychainKeyO",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "DaznSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Coralogix",
+        "printedName": "Coralogix",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DaznSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "requestFailed",
+            "printedName": "requestFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> (Swift.String) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> DaznSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(description: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO13requestFailedyACSS_tcACmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO13requestFailedyACSS_tcACmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidData",
+            "printedName": "invalidData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "DaznSDK.NetworkError",
+                    "usr": "s:7DaznSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO11invalidDatayA2CmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO11invalidDatayA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "responseUnsuccessful",
+            "printedName": "responseUnsuccessful",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> (Swift.Int, Swift.String) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> DaznSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, description: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO20responseUnsuccessfulyACSi_SStcACmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO20responseUnsuccessfulyACSi_SStcACmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "jsonDecodingFailure",
+            "printedName": "jsonDecodingFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> (Swift.String) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> DaznSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(description: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO19jsonDecodingFailureyACSS_tcACmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO19jsonDecodingFailureyACSS_tcACmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noInternetConnection",
+            "printedName": "noInternetConnection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "DaznSDK.NetworkError",
+                    "usr": "s:7DaznSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO20noInternetConnectionyA2CmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO20noInternetConnectionyA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidURL",
+            "printedName": "invalidURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "DaznSDK.NetworkError",
+                    "usr": "s:7DaznSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO10invalidURLyA2CmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO10invalidURLyA2CmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "custom",
+            "printedName": "custom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> (Swift.String, (any Swift.Error)?) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, (any Swift.Error)?) -> DaznSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(description: Swift.String, underlyingError: (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO6customyACSS_s0D0_pSgtcACmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO6customyACSS_s0D0_pSgtcACmF",
+            "moduleName": "DaznSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaznSDK.NetworkError.Type) -> DaznSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "DaznSDK.NetworkError",
+                    "usr": "s:7DaznSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaznSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "DaznSDK.NetworkError",
+                        "usr": "s:7DaznSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7DaznSDK12NetworkErrorO7unknownyA2CmF",
+            "mangledName": "$s7DaznSDK12NetworkErrorO7unknownyA2CmF",
+            "moduleName": "DaznSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7DaznSDK12NetworkErrorO",
+        "mangledName": "$s7DaznSDK12NetworkErrorO",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InititialSDK",
+        "printedName": "InititialSDK",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InititialSDK",
+                "printedName": "DaznSDK.InititialSDK",
+                "usr": "s:7DaznSDK09InititialB0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7DaznSDK09InititialB0CACycfc",
+            "mangledName": "$s7DaznSDK09InititialB0CACycfc",
+            "moduleName": "DaznSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7DaznSDK09InititialB0C",
+        "mangledName": "$s7DaznSDK09InititialB0C",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaznSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/PublicInterface\/DAZNConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 469,
+      "length": 4,
+      "value": "\"US\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/PublicInterface\/DAZNConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 514,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/Secrets\/Secrets.swift",
+      "kind": "StringLiteral",
+      "offset": 47,
+      "length": 15,
+      "value": "\"CORALOGIX_KEY\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/Services\/NetworkService\/HTTPClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 491,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/Services\/NetworkService\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 178,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/Services\/NetworkService\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/Services\/NetworkService\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/Services\/NetworkService\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 249,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/Services\/NetworkService\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 271,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 416,
+      "length": 14,
+      "value": "\"iOSNativeSDK\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 464,
+      "length": 7,
+      "value": "\"1.0.3\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 509,
+      "length": 36,
+      "value": "\"A native SDK for iOS applications.\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 603,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 9,
+      "value": "\"LICENSE\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "Array",
+      "offset": 673,
+      "length": 23,
+      "value": "[\"swift\", \"sdk\", \"ios\"]"
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 7,
+      "value": "\"jfrog\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 785,
+      "length": 72,
+      "value": "\"https:\/\/texelive.jfrog.io\/artifactory\/daznsdk-ios-dev\/daznsdk-ios-dev\/\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 935,
+      "length": 17,
+      "value": "\"Serhii Molodets\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/Code\/dazn\/ios-dazn-sdk\/Sources\/iOSNativeSDK\/SDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 973,
+      "length": 26,
+      "value": "\"serhii.molodets@dazn.com\""
+    }
+  ]
+}

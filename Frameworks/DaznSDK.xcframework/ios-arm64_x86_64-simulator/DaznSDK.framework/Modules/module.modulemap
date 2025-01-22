@@ -1,0 +1,6 @@
+framework module DaznSDK {
+  umbrella header "DaznSDK.h"
+  export *
+
+  module * { export * }
+}

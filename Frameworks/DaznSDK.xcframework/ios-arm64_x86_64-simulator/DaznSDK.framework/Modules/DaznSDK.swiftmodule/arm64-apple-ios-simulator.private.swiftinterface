@@ -1,0 +1,104 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios15-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DaznSDK
+@_exported import DaznSDK
+import Foundation
+import Security
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @globalActor final public actor DAZNSdkActor {
+  public static let shared: DaznSDK.DAZNSdkActor
+  public typealias ActorType = DaznSDK.DAZNSdkActor
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+public struct DAZNConfig : Swift.Sendable {
+  public var countryCode: Swift.String {
+    get
+  }
+  public var languageCode: Swift.String {
+    get
+  }
+  public var environment: DaznSDK.DAZNEnvironment {
+    get
+  }
+  public var sdkKey: Swift.String {
+    get
+  }
+  public init?(countryCode: Swift.String = "US", languageCode: Swift.String = "en", environment: DaznSDK.DAZNEnvironment = .staging, sdkKey: Swift.String)
+  public init?(witSdkKey sdkKey: Swift.String)
+}
+public enum DAZNEnvironment : Swift.Sendable {
+  case staging
+  case production
+  case mock
+  public static func == (a: DaznSDK.DAZNEnvironment, b: DaznSDK.DAZNEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @DaznSDK.DAZNSdkActor final public class DAZNSdk {
+  @DaznSDK.DAZNSdkActor public static var isInitialized: Swift.Bool {
+    get
+  }
+  @DaznSDK.DAZNSdkActor public static func initialize(config: DaznSDK.DAZNConfig, session: (any DaznSDK.DAZNSession)? = nil) async throws
+  @DaznSDK.DAZNSdkActor public static func getInstance() async throws -> any DaznSDK.DAZNSession
+  @DaznSDK.DAZNSdkActor public static func deinitialize() async
+  @objc deinit
+}
+public protocol DAZNSession : Swift.Sendable {
+  var isConnected: Swift.Bool { get }
+  func connectWith(email: Swift.String, viewController: UIKit.UIViewController) async throws
+  func connectWith(email: Swift.String, swiftUIView: SwiftUICore.AnyView) async throws
+  func connectWith(token: Swift.String) async throws
+  func disconnect() async throws
+  func changeRegion(countryCode: Swift.String, languageCode: Swift.String) async throws
+}
+public enum KeychainError : Swift.Error {
+  case unableToConvertData
+  case unableToSaveData
+  case unableToDeleteData
+  public static func == (a: DaznSDK.KeychainError, b: DaznSDK.KeychainError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum KeychainKey : Swift.String {
+  case token
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum NetworkError : Swift.Error {
+  case requestFailed(description: Swift.String)
+  case invalidData
+  case responseUnsuccessful(statusCode: Swift.Int, description: Swift.String)
+  case jsonDecodingFailure(description: Swift.String)
+  case noInternetConnection
+  case invalidURL
+  case custom(description: Swift.String, underlyingError: (any Swift.Error)?)
+  case unknown
+}
+public class InititialSDK {
+  public init()
+  @objc deinit
+}
+extension DaznSDK.DAZNSdkActor : _Concurrency.GlobalActor {}
+extension DaznSDK.DAZNEnvironment : Swift.Equatable {}
+extension DaznSDK.DAZNEnvironment : Swift.Hashable {}
+extension DaznSDK.DAZNSdk : Swift.Sendable {}
+extension DaznSDK.KeychainError : Swift.Equatable {}
+extension DaznSDK.KeychainError : Swift.Hashable {}
+extension DaznSDK.KeychainKey : Swift.Equatable {}
+extension DaznSDK.KeychainKey : Swift.Hashable {}
+extension DaznSDK.KeychainKey : Swift.RawRepresentable {}

@@ -4,22 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyFramework",
+    name: "DaznSDK",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "MyFramework",
+            name: "DaznSDK",
             targets: ["MyFramework"]),
     ],
     targets: [
-        .target(
-             name: "MyFramework",
-             dependencies: [
-                 .target(name: "DaznSDK"),
-                 .target(name: "Coralogix"),
-                 .target(name: "CrashReporter")
-             ]
-         ),
         .binaryTarget(
             name: "DaznSDK",
             path: "Frameworks/DaznSDK.xcframework"
@@ -31,6 +23,15 @@ let package = Package(
         .binaryTarget(
             name: "CrashReporter",
             path: "Frameworks/CrashReporter.xcframework"
+        ),
+        .target(
+            name: "MyFramework",
+            dependencies: [
+                .target(name: "DaznSDK"),
+                .target(name: "Coralogix"),
+                .target(name: "CrashReporter")
+            ],
+            path: "Sources/MyFramework"
         )
     ]
 )

@@ -11,6 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "DaznSDK",
+            type: .dynamic,
             targets: ["MyFramework"]
         ),
     ],

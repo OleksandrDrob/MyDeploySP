@@ -9,14 +9,14 @@ let package = Package(
         .iOS(.v15)
     ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "DaznSDK",
-            targets: ["MyFramework"]),
+            targets: ["MyFramework"]
+        ),
     ],
     dependencies: [
-          .package(url: "https://github.com/coralogix/cx-ios-sdk", from: "1.0.12")
-      ],
+        .package(url: "https://github.com/coralogix/cx-ios-sdk", from: "1.0.12")
+    ],
     targets: [
         .binaryTarget(
             name: "DaznSDK",
@@ -26,20 +26,9 @@ let package = Package(
             name: "MyFramework",
             dependencies: [
                 .target(name: "DaznSDK"),
-                
-//                .target(name: "Coralogix"),
-//                .target(name: "CrashReporter")
+                .product(name: "Coralogix", package: "cx-ios-sdk")
             ],
             path: "Sources/MyFramework"
         )
     ]
 )
-
-
-//    .target(
-//        name: "Coralogix",
-//        dependencies: [
-//            .target(name: "CrashReporter"),
-//        ],
-//        path: "Coralogix/Sources/"
-//    ),

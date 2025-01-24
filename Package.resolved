@@ -1,0 +1,15 @@
+{
+  "originHash" : "ee73334bf14c6a1aab32d3ff7dfdb7afd6710a35897e58b720b425a1c53995a5",
+  "pins" : [
+    {
+      "identity" : "cx-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/coralogix/cx-ios-sdk",
+      "state" : {
+        "revision" : "eef3553e2a2e905fd59971aa17c62d1667adb65a",
+        "version" : "1.0.12"
+      }
+    }
+  ],
+  "version" : 3
+}

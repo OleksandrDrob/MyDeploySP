@@ -20,8 +20,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "DaznSDK",
-            url: "https://github.com/getndazn/ios-dazn-sdk/releases/download/0.0.16/DaznSDK.xcframework.zip",
-            checksum: "0e1cc5dbb36270c17b5f81baf2f407f3a229050fedbdb4950b887e749be8448d"
+            path: "Frameworks/DaznSDK.xcframework"
         )
     ]
 )

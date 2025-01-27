@@ -12,6 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "DaznSDK",
+            type: .static,
             targets: ["DaznSDK"]),
     ],
     dependencies: [
@@ -21,6 +22,13 @@ let package = Package(
         .binaryTarget(
             name: "DaznSDK",
             path: "Frameworks/DaznSDK.xcframework"
+        ),
+        .target(
+            name: "DaznSDK",
+            dependencies: [
+                .product(name: "Coralogix", package: "cx-ios-sdk"),
+                .target(name: "DaznSDK")
+            ]
         )
     ]
 )

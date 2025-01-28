@@ -12,8 +12,8 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "DaznSDK",
-            // type: .dynamic,
-            targets: ["DaznSDKFramework"]),
+            type: .dynamic,
+            targets: ["DaznWrapper"]),
     ],
     dependencies: [
         .package(url: "https://github.com/coralogix/cx-ios-sdk", from: "1.0.12")

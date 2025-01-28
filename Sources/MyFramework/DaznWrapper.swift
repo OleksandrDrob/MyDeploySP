@@ -1,7 +1,9 @@
-//
-//  DaznWrapper.swift
-//  DaznSDK
-//
-//  Created by Oleksandr Drobyshev on 28.01.2025.
-//
+import Coralogix
+import CrashReporter
+import DaznSDK
 
+public class Initdfsd {
+    public static func hello() {
+        // sdfsdf
+    }
+}

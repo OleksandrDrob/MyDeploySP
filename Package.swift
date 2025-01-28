@@ -22,6 +22,16 @@ let package = Package(
         .binaryTarget(
             name: "DaznSDKFramework",
             path: "Frameworks/DaznSDK.xcframework"
+        ),
+        .target(
+            name: "DaznWrapper",
+            dependencies: [
+                .target(name: "DaznSDKFramework"),
+                .product(name: "Coralogix", package: "cx-ios-sdk")
+            ],
+            path: "Sources/MyFramework",
+            exclude: [], // Exclude unnecessary files if required
+            resources: [] // Add resources if your wrapper needs them
         )
     ]
 )
